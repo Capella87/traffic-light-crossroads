@@ -39,7 +39,7 @@
       <a name="valign" val="base"/>
     </tool>
   </lib>
-  <main name="main"/>
+  <main name="System v1.0"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -81,8 +81,8 @@
       <a name="inputs" val="2"/>
     </tool>
   </toolbar>
-  <circuit name="main">
-    <a name="circuit" val="main"/>
+  <circuit name="System v1.0">
+    <a name="circuit" val="System v1.0"/>
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
@@ -209,36 +209,14 @@
     <comp loc="(460,220)" name="controller">
       <a name="labelfont" val="Arial Black plain 12"/>
     </comp>
-    <comp loc="(280,290)" name="traffic-signal"/>
-    <comp lib="0" loc="(160,450)" name="Tunnel">
-      <a name="label" val="G2"/>
-      <a name="labelfont" val="Arial bold 12"/>
-    </comp>
     <comp lib="0" loc="(980,430)" name="Tunnel">
       <a name="facing" val="north"/>
-      <a name="label" val="PG1"/>
-      <a name="labelfont" val="Arial bold 12"/>
-    </comp>
-    <comp lib="0" loc="(280,490)" name="Tunnel">
       <a name="label" val="PG1"/>
       <a name="labelfont" val="Arial bold 12"/>
     </comp>
     <comp lib="0" loc="(100,490)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="PR2"/>
-      <a name="labelfont" val="Arial bold 12"/>
-    </comp>
-    <comp lib="5" loc="(710,410)" name="LED">
-      <a name="facing" val="south"/>
-      <a name="color" val="#00ff00"/>
-    </comp>
-    <comp lib="5" loc="(840,300)" name="LED">
-      <a name="facing" val="south"/>
-      <a name="color" val="#00ff00"/>
-    </comp>
-    <comp lib="0" loc="(820,150)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="label" val="G3"/>
       <a name="labelfont" val="Arial bold 12"/>
     </comp>
     <comp lib="0" loc="(160,310)" name="Tunnel">
@@ -251,10 +229,6 @@
       <a name="color" val="#00ff00"/>
       <a name="label" val="↓"/>
       <a name="labelfont" val="나눔고딕 ExtraBold bold 16"/>
-    </comp>
-    <comp lib="5" loc="(870,170)" name="LED">
-      <a name="facing" val="north"/>
-      <a name="color" val="#ff0000"/>
     </comp>
     <comp lib="0" loc="(100,430)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -270,54 +244,10 @@
     <comp lib="5" loc="(610,360)" name="LED">
       <a name="color" val="#ff0000"/>
     </comp>
-    <comp lib="0" loc="(490,180)" name="Tunnel">
-      <a name="width" val="2"/>
-      <a name="label" val="E"/>
-      <a name="labelfont" val="Arial bold 12"/>
-    </comp>
-    <comp lib="6" loc="(263,251)" name="Text">
-      <a name="text" val="WEST"/>
-      <a name="font" val="Arial bold 12"/>
-    </comp>
-    <comp lib="0" loc="(840,500)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="label" val="PR4"/>
-      <a name="labelfont" val="Arial bold 12"/>
-    </comp>
-    <comp lib="5" loc="(1080,400)" name="LED">
-      <a name="facing" val="east"/>
-      <a name="color" val="#ffff00"/>
-    </comp>
-    <comp lib="0" loc="(160,270)" name="Tunnel">
-      <a name="label" val="R3"/>
-      <a name="labelfont" val="Arial bold 12"/>
-    </comp>
-    <comp lib="0" loc="(870,150)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="label" val="R3"/>
-      <a name="labelfont" val="Arial bold 12"/>
-    </comp>
-    <comp lib="0" loc="(310,410)" name="Tunnel">
-      <a name="label" val="R1"/>
-      <a name="labelfont" val="Arial bold 12"/>
-    </comp>
     <comp lib="0" loc="(250,490)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="PR1"/>
       <a name="labelfont" val="Arial bold 12"/>
-    </comp>
-    <comp lib="0" loc="(860,670)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="G1"/>
-      <a name="labelfont" val="Arial bold 12"/>
-    </comp>
-    <comp lib="6" loc="(54,146)" name="Text">
-      <a name="text" val="Signal"/>
-      <a name="font" val="Arial bold 12"/>
-    </comp>
-    <comp lib="6" loc="(56,174)" name="Text">
-      <a name="text" val="Zero"/>
-      <a name="font" val="Arial bold 12"/>
     </comp>
     <comp lib="0" loc="(160,430)" name="Tunnel">
       <a name="label" val="Y2"/>
@@ -327,27 +257,10 @@
       <a name="facing" val="north"/>
       <a name="color" val="#ff0000"/>
     </comp>
-    <comp lib="6" loc="(113,251)" name="Text">
-      <a name="text" val="NORTH"/>
-      <a name="font" val="Arial bold 12"/>
-    </comp>
     <comp lib="5" loc="(830,650)" name="LED">
       <a name="facing" val="south"/>
       <a name="color" val="#ffff00"/>
     </comp>
-    <comp lib="0" loc="(310,270)" name="Tunnel">
-      <a name="label" val="R4"/>
-      <a name="labelfont" val="Arial bold 12"/>
-    </comp>
-    <comp lib="5" loc="(610,380)" name="LED">
-      <a name="color" val="#ffff00"/>
-    </comp>
-    <comp lib="0" loc="(980,350)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="label" val="PR1"/>
-      <a name="labelfont" val="Arial bold 12"/>
-    </comp>
-    <comp loc="(130,290)" name="traffic-signal"/>
     <comp lib="0" loc="(130,350)" name="Tunnel">
       <a name="label" val="PG3"/>
       <a name="labelfont" val="Arial bold 12"/>
@@ -362,35 +275,16 @@
       <a name="label" val="PG4"/>
       <a name="labelfont" val="Arial bold 12"/>
     </comp>
-    <comp lib="0" loc="(590,400)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="G4"/>
-      <a name="labelfont" val="Arial bold 12"/>
-    </comp>
     <comp lib="0" loc="(490,220)" name="Tunnel">
       <a name="width" val="2"/>
       <a name="label" val="W"/>
       <a name="labelfont" val="Arial bold 12"/>
-    </comp>
-    <comp lib="0" loc="(250,290)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="W"/>
-      <a name="labelfont" val="Arial bold 12"/>
-    </comp>
-    <comp lib="5" loc="(840,260)" name="LED">
-      <a name="facing" val="north"/>
-      <a name="color" val="#ff0000"/>
     </comp>
     <comp lib="5" loc="(320,100)" name="Hex Digit Display"/>
     <comp lib="0" loc="(830,670)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="Y1"/>
       <a name="labelfont" val="Arial bold 12"/>
-    </comp>
-    <comp lib="5" loc="(710,370)" name="LED">
-      <a name="facing" val="north"/>
-      <a name="color" val="#ff0000"/>
     </comp>
     <comp lib="6" loc="(266,389)" name="Text">
       <a name="text" val="SOUTH"/>
@@ -432,23 +326,14 @@
       <a name="facing" val="east"/>
       <a name="color" val="#00ff00"/>
     </comp>
+    <comp lib="6" loc="(168,81)" name="Text">
+      <a name="text" val="Control Circuit"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
     <comp lib="5" loc="(610,420)" name="LED">
       <a name="color" val="#00ff00"/>
     </comp>
-    <comp lib="5" loc="(810,650)" name="LED">
-      <a name="facing" val="south"/>
-      <a name="color" val="#ff0000"/>
-    </comp>
-    <comp lib="0" loc="(130,490)" name="Tunnel">
-      <a name="label" val="PG2"/>
-      <a name="labelfont" val="Arial bold 12"/>
-    </comp>
     <comp loc="(200,140)" name="4-bit-counter"/>
-    <comp lib="0" loc="(590,380)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Y4"/>
-      <a name="labelfont" val="Arial bold 12"/>
-    </comp>
     <comp lib="0" loc="(710,350)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="label" val="PR3"/>
@@ -466,68 +351,26 @@
       <a name="label" val="PG4"/>
       <a name="labelfont" val="Arial bold 12"/>
     </comp>
-    <comp lib="0" loc="(160,410)" name="Tunnel">
-      <a name="label" val="R2"/>
-      <a name="labelfont" val="Arial bold 12"/>
-    </comp>
-    <comp lib="6" loc="(53,204)" name="Text">
-      <a name="text" val="Clock"/>
-      <a name="font" val="Arial bold 12"/>
-    </comp>
-    <comp lib="5" loc="(870,650)" name="LED">
-      <a name="facing" val="south"/>
-      <a name="color" val="#00ff00"/>
-    </comp>
-    <comp lib="5" loc="(610,400)" name="LED">
-      <a name="color" val="#00ff00"/>
-      <a name="label" val="↑"/>
-      <a name="labelfont" val="나눔고딕 ExtraBold bold 16"/>
-    </comp>
     <comp lib="6" loc="(117,388)" name="Text">
       <a name="text" val="EAST"/>
       <a name="font" val="Arial bold 12"/>
     </comp>
-    <comp lib="5" loc="(850,650)" name="LED">
-      <a name="facing" val="south"/>
-      <a name="color" val="#00ff00"/>
-      <a name="label" val="←"/>
-      <a name="labelfont" val="나눔고딕 ExtraBold bold 16"/>
-    </comp>
-    <comp lib="0" loc="(100,170)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(250,430)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="S"/>
-      <a name="labelfont" val="Arial bold 12"/>
-    </comp>
     <comp lib="0" loc="(100,140)" name="Pin">
       <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(490,200)" name="Tunnel">
-      <a name="width" val="2"/>
-      <a name="label" val="N"/>
-      <a name="labelfont" val="Arial bold 12"/>
     </comp>
     <comp lib="0" loc="(1100,360)" name="Tunnel">
       <a name="label" val="G2"/>
       <a name="labelfont" val="Arial bold 12"/>
+    </comp>
+    <comp lib="6" loc="(195,659)" name="Text">
+      <a name="text" val="github.com/Capella87/traffic-light-crossroads"/>
+      <a name="font" val="Arial plain 16"/>
     </comp>
     <comp lib="5" loc="(830,170)" name="LED">
       <a name="facing" val="north"/>
       <a name="color" val="#00ff00"/>
       <a name="label" val="→"/>
       <a name="labelfont" val="나눔고딕 ExtraBold bold 16"/>
-    </comp>
-    <comp lib="0" loc="(250,350)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="PR4"/>
-      <a name="labelfont" val="Arial bold 12"/>
-    </comp>
-    <comp lib="5" loc="(1080,420)" name="LED">
-      <a name="facing" val="east"/>
-      <a name="color" val="#ff0000"/>
     </comp>
     <comp lib="0" loc="(160,290)" name="Tunnel">
       <a name="label" val="Y3"/>
@@ -552,19 +395,13 @@
       <a name="facing" val="north"/>
       <a name="color" val="#00ff00"/>
     </comp>
-    <comp lib="0" loc="(850,150)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="label" val="Y3"/>
-      <a name="labelfont" val="Arial bold 12"/>
+    <comp lib="6" loc="(190,599)" name="Text">
+      <a name="text" val="Released on May 28, 2021"/>
+      <a name="font" val="Arial plain 16"/>
     </comp>
     <comp lib="0" loc="(310,430)" name="Tunnel">
       <a name="label" val="Y1"/>
       <a name="labelfont" val="Arial bold 12"/>
-    </comp>
-    <comp lib="0" loc="(270,190)" name="Splitter">
-      <a name="facing" val="north"/>
-      <a name="fanout" val="4"/>
-      <a name="incoming" val="4"/>
     </comp>
     <comp lib="0" loc="(100,350)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -579,6 +416,209 @@
     <comp lib="5" loc="(840,560)" name="LED">
       <a name="facing" val="south"/>
       <a name="color" val="#00ff00"/>
+    </comp>
+    <comp loc="(280,290)" name="traffic-signal"/>
+    <comp lib="0" loc="(160,450)" name="Tunnel">
+      <a name="label" val="G2"/>
+      <a name="labelfont" val="Arial bold 12"/>
+    </comp>
+    <comp lib="0" loc="(280,490)" name="Tunnel">
+      <a name="label" val="PG1"/>
+      <a name="labelfont" val="Arial bold 12"/>
+    </comp>
+    <comp lib="5" loc="(710,410)" name="LED">
+      <a name="facing" val="south"/>
+      <a name="color" val="#00ff00"/>
+    </comp>
+    <comp lib="5" loc="(840,300)" name="LED">
+      <a name="facing" val="south"/>
+      <a name="color" val="#00ff00"/>
+    </comp>
+    <comp lib="0" loc="(820,150)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="G3"/>
+      <a name="labelfont" val="Arial bold 12"/>
+    </comp>
+    <comp lib="5" loc="(870,170)" name="LED">
+      <a name="facing" val="north"/>
+      <a name="color" val="#ff0000"/>
+    </comp>
+    <comp lib="6" loc="(523,392)" name="Text">
+      <a name="text" val="WEST"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="0" loc="(490,180)" name="Tunnel">
+      <a name="width" val="2"/>
+      <a name="label" val="E"/>
+      <a name="labelfont" val="Arial bold 12"/>
+    </comp>
+    <comp lib="6" loc="(263,251)" name="Text">
+      <a name="text" val="WEST"/>
+      <a name="font" val="Arial bold 12"/>
+    </comp>
+    <comp lib="0" loc="(840,500)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="PR4"/>
+      <a name="labelfont" val="Arial bold 12"/>
+    </comp>
+    <comp lib="5" loc="(1080,400)" name="LED">
+      <a name="facing" val="east"/>
+      <a name="color" val="#ffff00"/>
+    </comp>
+    <comp lib="0" loc="(160,270)" name="Tunnel">
+      <a name="label" val="R3"/>
+      <a name="labelfont" val="Arial bold 12"/>
+    </comp>
+    <comp lib="6" loc="(843,107)" name="Text">
+      <a name="text" val="NORTH"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="0" loc="(870,150)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="R3"/>
+      <a name="labelfont" val="Arial bold 12"/>
+    </comp>
+    <comp lib="0" loc="(310,410)" name="Tunnel">
+      <a name="label" val="R1"/>
+      <a name="labelfont" val="Arial bold 12"/>
+    </comp>
+    <comp lib="0" loc="(860,670)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="G1"/>
+      <a name="labelfont" val="Arial bold 12"/>
+    </comp>
+    <comp lib="6" loc="(54,146)" name="Text">
+      <a name="text" val="Signal"/>
+      <a name="font" val="Arial bold 12"/>
+    </comp>
+    <comp lib="6" loc="(56,174)" name="Text">
+      <a name="text" val="Zero"/>
+      <a name="font" val="Arial bold 12"/>
+    </comp>
+    <comp lib="6" loc="(1172,393)" name="Text">
+      <a name="text" val="EAST"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="6" loc="(113,251)" name="Text">
+      <a name="text" val="NORTH"/>
+      <a name="font" val="Arial bold 12"/>
+    </comp>
+    <comp lib="0" loc="(310,270)" name="Tunnel">
+      <a name="label" val="R4"/>
+      <a name="labelfont" val="Arial bold 12"/>
+    </comp>
+    <comp lib="5" loc="(610,380)" name="LED">
+      <a name="color" val="#ffff00"/>
+    </comp>
+    <comp lib="0" loc="(980,350)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="PR1"/>
+      <a name="labelfont" val="Arial bold 12"/>
+    </comp>
+    <comp loc="(130,290)" name="traffic-signal"/>
+    <comp lib="0" loc="(590,400)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="G4"/>
+      <a name="labelfont" val="Arial bold 12"/>
+    </comp>
+    <comp lib="0" loc="(250,290)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="W"/>
+      <a name="labelfont" val="Arial bold 12"/>
+    </comp>
+    <comp lib="5" loc="(840,260)" name="LED">
+      <a name="facing" val="north"/>
+      <a name="color" val="#ff0000"/>
+    </comp>
+    <comp lib="5" loc="(710,370)" name="LED">
+      <a name="facing" val="north"/>
+      <a name="color" val="#ff0000"/>
+    </comp>
+    <comp lib="5" loc="(810,650)" name="LED">
+      <a name="facing" val="south"/>
+      <a name="color" val="#ff0000"/>
+    </comp>
+    <comp lib="0" loc="(130,490)" name="Tunnel">
+      <a name="label" val="PG2"/>
+      <a name="labelfont" val="Arial bold 12"/>
+    </comp>
+    <comp lib="0" loc="(590,380)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Y4"/>
+      <a name="labelfont" val="Arial bold 12"/>
+    </comp>
+    <comp lib="6" loc="(190,570)" name="Text">
+      <a name="text" val="System v1.0"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="0" loc="(160,410)" name="Tunnel">
+      <a name="label" val="R2"/>
+      <a name="labelfont" val="Arial bold 12"/>
+    </comp>
+    <comp lib="6" loc="(53,204)" name="Text">
+      <a name="text" val="Clock"/>
+      <a name="font" val="Arial bold 12"/>
+    </comp>
+    <comp lib="5" loc="(870,650)" name="LED">
+      <a name="facing" val="south"/>
+      <a name="color" val="#00ff00"/>
+    </comp>
+    <comp lib="6" loc="(191,630)" name="Text">
+      <a name="text" val="Copyright (c) 2021 Capella87"/>
+      <a name="font" val="Arial plain 16"/>
+    </comp>
+    <comp lib="5" loc="(610,400)" name="LED">
+      <a name="color" val="#00ff00"/>
+      <a name="label" val="↑"/>
+      <a name="labelfont" val="나눔고딕 ExtraBold bold 16"/>
+    </comp>
+    <comp lib="6" loc="(842,733)" name="Text">
+      <a name="text" val="SOUTH"/>
+      <a name="font" val="Arial bold 18"/>
+    </comp>
+    <comp lib="5" loc="(850,650)" name="LED">
+      <a name="facing" val="south"/>
+      <a name="color" val="#00ff00"/>
+      <a name="label" val="←"/>
+      <a name="labelfont" val="나눔고딕 ExtraBold bold 16"/>
+    </comp>
+    <comp lib="0" loc="(100,170)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(250,430)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="S"/>
+      <a name="labelfont" val="Arial bold 12"/>
+    </comp>
+    <comp lib="0" loc="(490,200)" name="Tunnel">
+      <a name="width" val="2"/>
+      <a name="label" val="N"/>
+      <a name="labelfont" val="Arial bold 12"/>
+    </comp>
+    <comp lib="0" loc="(250,350)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="PR4"/>
+      <a name="labelfont" val="Arial bold 12"/>
+    </comp>
+    <comp lib="5" loc="(1080,420)" name="LED">
+      <a name="facing" val="east"/>
+      <a name="color" val="#ff0000"/>
+    </comp>
+    <comp lib="6" loc="(861,71)" name="Text">
+      <a name="text" val="Traffic Light System in crossroad"/>
+      <a name="font" val="Arial Black plain 28"/>
+    </comp>
+    <comp lib="0" loc="(850,150)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="Y3"/>
+      <a name="labelfont" val="Arial bold 12"/>
+    </comp>
+    <comp lib="0" loc="(270,190)" name="Splitter">
+      <a name="facing" val="north"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
     </comp>
   </circuit>
   <circuit name="4-bit-counter">
