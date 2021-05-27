@@ -48,8 +48,6 @@
     </tool>
     <sep/>
     <tool lib="0" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="width" val="2"/>
       <a name="tristate" val="false"/>
     </tool>
     <tool lib="0" name="Pin">
@@ -74,28 +72,44 @@
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(150,170)" to="(160,170)"/>
-    <wire from="(320,110)" to="(320,190)"/>
-    <wire from="(160,160)" to="(160,170)"/>
-    <wire from="(160,160)" to="(200,160)"/>
-    <wire from="(270,190)" to="(320,190)"/>
-    <wire from="(320,190)" to="(370,190)"/>
-    <wire from="(150,150)" to="(200,150)"/>
-    <comp lib="0" loc="(150,170)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp loc="(460,220)" name="controller">
+    <wire from="(190,260)" to="(220,260)"/>
+    <wire from="(120,270)" to="(180,270)"/>
+    <wire from="(290,290)" to="(340,290)"/>
+    <wire from="(340,290)" to="(390,290)"/>
+    <wire from="(190,260)" to="(190,300)"/>
+    <wire from="(180,250)" to="(180,270)"/>
+    <wire from="(180,250)" to="(220,250)"/>
+    <wire from="(120,300)" to="(190,300)"/>
+    <wire from="(120,240)" to="(220,240)"/>
+    <wire from="(340,200)" to="(340,290)"/>
+    <comp loc="(480,320)" name="controller">
       <a name="labelfont" val="Arial Black plain 12"/>
     </comp>
-    <comp lib="5" loc="(320,110)" name="Hex Digit Display"/>
-    <comp loc="(200,150)" name="4-bit-counter"/>
-    <comp lib="0" loc="(270,190)" name="Splitter">
+    <comp lib="0" loc="(290,290)" name="Splitter">
       <a name="facing" val="north"/>
       <a name="fanout" val="4"/>
       <a name="incoming" val="4"/>
     </comp>
-    <comp lib="0" loc="(150,150)" name="Pin">
+    <comp lib="6" loc="(73,304)" name="Text">
+      <a name="text" val="Clock"/>
+      <a name="font" val="Arial bold 12"/>
+    </comp>
+    <comp lib="6" loc="(74,246)" name="Text">
+      <a name="text" val="Signal"/>
+      <a name="font" val="Arial bold 12"/>
+    </comp>
+    <comp lib="0" loc="(120,270)" name="Pin">
       <a name="tristate" val="false"/>
+    </comp>
+    <comp loc="(220,240)" name="4-bit-counter"/>
+    <comp lib="0" loc="(120,240)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="5" loc="(340,200)" name="Hex Digit Display"/>
+    <comp lib="0" loc="(120,300)" name="Clock"/>
+    <comp lib="6" loc="(76,274)" name="Text">
+      <a name="text" val="Zero"/>
+      <a name="font" val="Arial bold 12"/>
     </comp>
   </circuit>
   <circuit name="4-bit-counter">
@@ -105,14 +119,15 @@
     <a name="clabelfont" val="SansSerif plain 12"/>
     <appear>
       <path d="M92,51 Q96,61 100,51" fill="none" stroke="#808080" stroke-width="2"/>
-      <rect fill="none" height="30" stroke="#000000" stroke-width="2" width="90" x="50" y="50"/>
-      <text font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" x="96" y="69">4-bit Counter</text>
+      <rect fill="none" height="40" stroke="#000000" stroke-width="2" width="90" x="50" y="50"/>
+      <text font-family="Arial" font-size="12" font-weight="bold" text-anchor="middle" x="96" y="74">4-bit Counter</text>
       <circ-port height="8" pin="120,180" width="8" x="46" y="56"/>
       <circ-port height="8" pin="120,220" width="8" x="46" y="66"/>
-      <circ-port height="10" pin="330,350" width="10" x="105" y="75"/>
-      <circ-port height="10" pin="430,350" width="10" x="95" y="75"/>
-      <circ-port height="10" pin="530,350" width="10" x="85" y="75"/>
-      <circ-port height="10" pin="630,350" width="10" x="75" y="75"/>
+      <circ-port height="10" pin="330,350" width="10" x="105" y="85"/>
+      <circ-port height="10" pin="430,350" width="10" x="95" y="85"/>
+      <circ-port height="10" pin="530,350" width="10" x="85" y="85"/>
+      <circ-port height="10" pin="630,350" width="10" x="75" y="85"/>
+      <circ-port height="8" pin="120,280" width="8" x="46" y="76"/>
       <circ-anchor facing="east" height="6" width="6" x="47" y="57"/>
     </appear>
     <wire from="(120,220)" to="(310,220)"/>
@@ -202,6 +217,17 @@
       <a name="labelloc" val="east"/>
     </comp>
     <comp lib="4" loc="(420,180)" name="J-K Flip-Flop"/>
+    <comp lib="0" loc="(120,280)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(69,226)" name="Text">
+      <a name="text" val="Zero"/>
+      <a name="font" val="Arial bold 12"/>
+    </comp>
+    <comp lib="6" loc="(67,284)" name="Text">
+      <a name="text" val="Clock"/>
+      <a name="font" val="Arial bold 12"/>
+    </comp>
     <comp lib="0" loc="(120,180)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
@@ -210,24 +236,18 @@
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="6" loc="(72,186)" name="Text">
+      <a name="text" val="Power"/>
+      <a name="font" val="Arial bold 12"/>
+    </comp>
     <comp lib="1" loc="(570,120)" name="AND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="3"/>
     </comp>
-    <comp lib="0" loc="(120,280)" name="Clock"/>
-    <comp lib="6" loc="(69,186)" name="Text">
-      <a name="text" val="Power"/>
-    </comp>
     <comp lib="0" loc="(120,220)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="6" loc="(66,226)" name="Text">
-      <a name="text" val="Zero"/>
-    </comp>
     <comp lib="4" loc="(520,180)" name="J-K Flip-Flop"/>
-    <comp lib="6" loc="(63,284)" name="Text">
-      <a name="text" val="Clock"/>
-    </comp>
     <comp lib="0" loc="(530,350)" name="Pin">
       <a name="facing" val="north"/>
       <a name="output" val="true"/>
