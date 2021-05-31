@@ -15,7 +15,7 @@ All routines are followed South Korean system. Each side has a traffic light for
 * Pedestrian Traffic Lights: Has red and green light. No dedicated traffic light for bicycles
 
 ## Requirements
-To open this circuit file, [Logisim](http://www.cburch.com/logisim)—an open-source logic circuit simulator—is required. Also, that program requires Java Runtime Environment(JRE) to execute.
+To open this circuit file, [Logisim](http://www.cburch.com/logisim)—an open-source logical circuit simulator—is required. Also, that program requires Java Runtime Environment(JRE) to execute.
 To meet this condition, you **MUST** download [JRE](https://java.com/en) (Free) provided by Oracle or [Java SE](https://www.oracle.com/java/technologies/javase-downloads.html) (requires paid subscription from 2019) from Oracle or any other OpenJDK distributors such as [Zulu](https://www.azul.com/downloads) and [AdoptOpenJDK](https://adoptopenjdk.net).
 The simplest method is downloading JRE from Oracle.
 This way does not require extra works to run.
@@ -26,7 +26,6 @@ For more details, See HELP Markdown file at the root directory. (Not uploaded ye
 ## Operation
 <img src="./v.1.0.0operation.gif">
 <b>▲ The glimpse of circuit as of v1.0.0</b>
-
 
 ---
 Last updated on May 31, 2021
