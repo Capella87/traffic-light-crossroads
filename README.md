@@ -24,10 +24,10 @@ To troubleshoot, Make a shortcut including arguments regarding Java from OpenJDK
 For more details, See HELP Markdown file at the root directory. (Not uploaded yet. will be available from no later than the late first week of June, 2021)
 
 ## Operation
-<img src="./v.1.0.0operation.gif">
-<b>▲ The glimpse of circuit as of v1.0.0</b>
+<img src="./v2.0.0operation.gif">
+<b>▲ The glimpse of circuit as of v2.0.0</b>
 
 ---
-Last updated on May 31, 2021
+Last updated on Jun 2, 2021
 
 Copyright (c) 2021 Capella87
