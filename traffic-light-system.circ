@@ -80,6 +80,7 @@
       <a name="labelloc" val="east"/>
     </tool>
     <tool lib="1" name="NOT Gate">
+      <a name="facing" val="south"/>
       <a name="size" val="20"/>
     </tool>
     <tool lib="1" name="AND Gate">
@@ -328,6 +329,10 @@
       <a name="font" val="Arial bold 14"/>
     </comp>
     <comp loc="(200,240)" name="diff-detector"/>
+    <comp lib="6" loc="(482,781)" name="Text">
+      <a name="text" val="100: Red-flickering"/>
+      <a name="font" val="Arial plain 12"/>
+    </comp>
     <comp lib="5" loc="(810,170)" name="LED">
       <a name="facing" val="north"/>
       <a name="color" val="#00ff00"/>
@@ -755,10 +760,6 @@
     <comp lib="0" loc="(100,140)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="6" loc="(219,698)" name="Text">
-      <a name="text" val="Released on Jun 4, 2021"/>
-      <a name="font" val="Calibri plain 16"/>
-    </comp>
     <comp lib="5" loc="(870,170)" name="LED">
       <a name="facing" val="north"/>
       <a name="color" val="#ff0000"/>
@@ -766,6 +767,10 @@
     <comp lib="6" loc="(509,671)" name="Text">
       <a name="text" val="Mode Information"/>
       <a name="font" val="Arial bold 14"/>
+    </comp>
+    <comp lib="6" loc="(219,698)" name="Text">
+      <a name="text" val="Released on Jun 5, 2021"/>
+      <a name="font" val="Calibri plain 16"/>
     </comp>
     <comp lib="0" loc="(430,260)" name="Tunnel">
       <a name="facing" val="north"/>
@@ -1011,6 +1016,7 @@
     <wire from="(1030,410)" to="(1030,550)"/>
     <wire from="(1000,400)" to="(1000,410)"/>
     <wire from="(530,300)" to="(850,300)"/>
+    <wire from="(520,500)" to="(880,500)"/>
     <wire from="(830,70)" to="(830,100)"/>
     <wire from="(500,100)" to="(500,120)"/>
     <wire from="(500,220)" to="(500,240)"/>
@@ -1044,6 +1050,7 @@
     <wire from="(490,330)" to="(740,330)"/>
     <wire from="(530,280)" to="(840,280)"/>
     <wire from="(860,90)" to="(980,90)"/>
+    <wire from="(880,490)" to="(880,500)"/>
     <wire from="(540,710)" to="(730,710)"/>
     <wire from="(350,640)" to="(400,640)"/>
     <wire from="(490,100)" to="(490,110)"/>
@@ -1051,7 +1058,6 @@
     <wire from="(520,680)" to="(520,750)"/>
     <wire from="(530,210)" to="(780,210)"/>
     <wire from="(520,680)" to="(770,680)"/>
-    <wire from="(520,510)" to="(880,510)"/>
     <wire from="(880,490)" to="(980,490)"/>
     <wire from="(320,110)" to="(490,110)"/>
     <wire from="(350,140)" to="(520,140)"/>
@@ -1068,11 +1074,11 @@
     <wire from="(490,220)" to="(490,250)"/>
     <wire from="(200,200)" to="(200,290)"/>
     <wire from="(860,350)" to="(860,370)"/>
-    <wire from="(880,490)" to="(880,510)"/>
     <wire from="(280,770)" to="(280,800)"/>
     <wire from="(810,320)" to="(980,320)"/>
     <wire from="(1000,530)" to="(1000,550)"/>
     <wire from="(330,660)" to="(620,660)"/>
+    <wire from="(200,490)" to="(490,490)"/>
     <wire from="(540,710)" to="(540,750)"/>
     <wire from="(320,710)" to="(540,710)"/>
     <wire from="(660,790)" to="(660,830)"/>
@@ -1169,6 +1175,7 @@
     <wire from="(1020,230)" to="(1050,230)"/>
     <wire from="(1000,410)" to="(1030,410)"/>
     <wire from="(320,710)" to="(320,750)"/>
+    <wire from="(200,380)" to="(200,490)"/>
     <wire from="(440,790)" to="(440,830)"/>
     <wire from="(760,250)" to="(760,670)"/>
     <wire from="(490,400)" to="(490,440)"/>
@@ -1176,7 +1183,6 @@
     <wire from="(530,190)" to="(790,190)"/>
     <wire from="(1030,550)" to="(1030,800)"/>
     <wire from="(840,80)" to="(980,80)"/>
-    <wire from="(200,380)" to="(200,500)"/>
     <wire from="(200,380)" to="(460,380)"/>
     <comp lib="2" loc="(440,790)" name="Multiplexer">
       <a name="facing" val="south"/>
@@ -1275,6 +1281,7 @@
       <a name="bit1" val="none"/>
       <a name="bit2" val="0"/>
     </comp>
+    <comp loc="(520,490)" name="red-flickering"/>
     <comp lib="6" loc="(77,155)" name="Text">
       <a name="text" val="Counter input"/>
       <a name="font" val="Arial bold 14"/>
@@ -2919,6 +2926,95 @@
       <a name="output" val="true"/>
       <a name="width" val="3"/>
       <a name="labelloc" val="east"/>
+    </comp>
+  </circuit>
+  <circuit name="red-flickering">
+    <a name="circuit" val="red-flickering"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(370,230)" to="(430,230)"/>
+    <wire from="(570,210)" to="(570,220)"/>
+    <wire from="(570,340)" to="(660,340)"/>
+    <wire from="(570,210)" to="(660,210)"/>
+    <wire from="(430,250)" to="(550,250)"/>
+    <wire from="(430,230)" to="(550,230)"/>
+    <wire from="(430,250)" to="(430,290)"/>
+    <wire from="(430,370)" to="(550,370)"/>
+    <wire from="(430,350)" to="(550,350)"/>
+    <wire from="(430,310)" to="(430,350)"/>
+    <wire from="(540,120)" to="(540,240)"/>
+    <wire from="(540,240)" to="(540,360)"/>
+    <wire from="(430,230)" to="(430,250)"/>
+    <wire from="(430,350)" to="(430,370)"/>
+    <wire from="(340,240)" to="(350,240)"/>
+    <wire from="(540,360)" to="(540,380)"/>
+    <wire from="(540,360)" to="(550,360)"/>
+    <wire from="(540,240)" to="(550,240)"/>
+    <comp lib="0" loc="(350,240)" name="Splitter">
+      <a name="fanout" val="1"/>
+      <a name="incoming" val="4"/>
+      <a name="bit1" val="none"/>
+      <a name="bit2" val="none"/>
+      <a name="bit3" val="none"/>
+    </comp>
+    <comp lib="6" loc="(725,201)" name="Text">
+      <a name="text" val="South"/>
+      <a name="font" val="Arial bold 14"/>
+    </comp>
+    <comp lib="1" loc="(430,310)" name="NOT Gate">
+      <a name="facing" val="south"/>
+      <a name="size" val="20"/>
+    </comp>
+    <comp lib="0" loc="(660,340)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="3"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="6" loc="(722,359)" name="Text">
+      <a name="text" val="West"/>
+      <a name="font" val="Arial bold 14"/>
+    </comp>
+    <comp lib="0" loc="(570,340)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+      <a name="bit0" val="2"/>
+      <a name="bit2" val="0"/>
+    </comp>
+    <comp lib="6" loc="(722,335)" name="Text">
+      <a name="text" val="East"/>
+      <a name="font" val="Arial bold 14"/>
+    </comp>
+    <comp lib="0" loc="(340,240)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(660,210)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="3"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(570,220)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+      <a name="bit0" val="2"/>
+      <a name="bit2" val="0"/>
+    </comp>
+    <comp lib="6" loc="(724,226)" name="Text">
+      <a name="text" val="North"/>
+      <a name="font" val="Arial bold 14"/>
+    </comp>
+    <comp lib="6" loc="(266,248)" name="Text">
+      <a name="text" val="Counter"/>
+      <a name="font" val="Arial bold 14"/>
+    </comp>
+    <comp lib="0" loc="(540,120)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="value" val="0x0"/>
     </comp>
   </circuit>
 </project>
