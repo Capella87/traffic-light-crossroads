@@ -80,6 +80,7 @@
       <a name="labelloc" val="east"/>
     </tool>
     <tool lib="1" name="NOT Gate">
+      <a name="facing" val="south"/>
       <a name="size" val="20"/>
     </tool>
     <tool lib="1" name="AND Gate">
@@ -1017,11 +1018,15 @@
     <wire from="(720,440)" to="(720,720)"/>
     <wire from="(790,100)" to="(790,190)"/>
     <wire from="(610,770)" to="(610,800)"/>
+    <wire from="(180,490)" to="(180,580)"/>
+    <wire from="(510,820)" to="(620,820)"/>
+    <wire from="(160,600)" to="(160,630)"/>
     <wire from="(100,180)" to="(200,180)"/>
     <wire from="(500,430)" to="(730,430)"/>
     <wire from="(550,790)" to="(550,830)"/>
     <wire from="(300,680)" to="(520,680)"/>
     <wire from="(310,690)" to="(530,690)"/>
+    <wire from="(620,780)" to="(620,820)"/>
     <wire from="(410,670)" to="(630,670)"/>
     <wire from="(830,70)" to="(980,70)"/>
     <wire from="(1020,360)" to="(1050,360)"/>
@@ -1034,6 +1039,7 @@
     <wire from="(420,700)" to="(420,750)"/>
     <wire from="(500,240)" to="(770,240)"/>
     <wire from="(740,330)" to="(740,700)"/>
+    <wire from="(160,820)" to="(290,820)"/>
     <wire from="(610,770)" to="(620,770)"/>
     <wire from="(490,330)" to="(740,330)"/>
     <wire from="(530,280)" to="(840,280)"/>
@@ -1070,11 +1076,13 @@
     <wire from="(830,220)" to="(830,390)"/>
     <wire from="(830,480)" to="(980,480)"/>
     <wire from="(400,640)" to="(400,750)"/>
+    <wire from="(290,780)" to="(290,820)"/>
     <wire from="(1020,490)" to="(1050,490)"/>
     <wire from="(1000,150)" to="(1030,150)"/>
     <wire from="(1000,550)" to="(1030,550)"/>
     <wire from="(280,770)" to="(290,770)"/>
     <wire from="(770,240)" to="(770,680)"/>
+    <wire from="(170,580)" to="(180,580)"/>
     <wire from="(840,340)" to="(980,340)"/>
     <wire from="(200,200)" to="(460,200)"/>
     <wire from="(790,190)" to="(790,330)"/>
@@ -1090,6 +1098,7 @@
     <wire from="(610,800)" to="(1030,800)"/>
     <wire from="(530,70)" to="(820,70)"/>
     <wire from="(640,700)" to="(740,700)"/>
+    <wire from="(290,820)" to="(400,820)"/>
     <wire from="(200,180)" to="(200,200)"/>
     <wire from="(390,770)" to="(390,800)"/>
     <wire from="(500,400)" to="(500,430)"/>
@@ -1106,6 +1115,7 @@
     <wire from="(330,790)" to="(330,830)"/>
     <wire from="(1020,100)" to="(1050,100)"/>
     <wire from="(1000,280)" to="(1030,280)"/>
+    <wire from="(400,780)" to="(400,820)"/>
     <wire from="(520,100)" to="(520,140)"/>
     <wire from="(390,770)" to="(400,770)"/>
     <wire from="(350,140)" to="(350,640)"/>
@@ -1131,17 +1141,21 @@
     <wire from="(1030,280)" to="(1030,410)"/>
     <wire from="(340,130)" to="(340,650)"/>
     <wire from="(650,720)" to="(650,750)"/>
+    <wire from="(400,820)" to="(510,820)"/>
     <wire from="(410,670)" to="(410,750)"/>
     <wire from="(500,770)" to="(500,800)"/>
     <wire from="(510,100)" to="(510,130)"/>
     <wire from="(330,120)" to="(330,660)"/>
     <wire from="(500,800)" to="(610,800)"/>
+    <wire from="(180,580)" to="(180,800)"/>
+    <wire from="(510,780)" to="(510,820)"/>
     <wire from="(320,110)" to="(320,660)"/>
     <wire from="(430,720)" to="(650,720)"/>
     <wire from="(290,660)" to="(320,660)"/>
     <wire from="(830,220)" to="(980,220)"/>
     <wire from="(90,490)" to="(180,490)"/>
     <wire from="(850,300)" to="(850,470)"/>
+    <wire from="(160,650)" to="(160,820)"/>
     <wire from="(510,650)" to="(510,750)"/>
     <wire from="(1020,230)" to="(1050,230)"/>
     <wire from="(1000,410)" to="(1030,410)"/>
@@ -1150,7 +1164,6 @@
     <wire from="(760,250)" to="(760,670)"/>
     <wire from="(490,400)" to="(490,440)"/>
     <wire from="(500,770)" to="(510,770)"/>
-    <wire from="(180,490)" to="(180,800)"/>
     <wire from="(530,190)" to="(790,190)"/>
     <wire from="(1030,550)" to="(1030,800)"/>
     <wire from="(840,80)" to="(980,80)"/>
@@ -1243,6 +1256,15 @@
       <a name="select" val="3"/>
       <a name="width" val="3"/>
     </comp>
+    <comp lib="0" loc="(170,580)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="1"/>
+      <a name="incoming" val="3"/>
+      <a name="appear" val="right"/>
+      <a name="bit0" val="none"/>
+      <a name="bit1" val="none"/>
+      <a name="bit2" val="0"/>
+    </comp>
     <comp lib="6" loc="(77,155)" name="Text">
       <a name="text" val="Counter input"/>
       <a name="font" val="Arial bold 14"/>
@@ -1274,6 +1296,10 @@
     <comp lib="2" loc="(330,790)" name="Multiplexer">
       <a name="facing" val="south"/>
       <a name="select" val="3"/>
+    </comp>
+    <comp lib="1" loc="(160,650)" name="NOT Gate">
+      <a name="facing" val="south"/>
+      <a name="size" val="20"/>
     </comp>
     <comp lib="0" loc="(90,490)" name="Pin">
       <a name="width" val="3"/>
