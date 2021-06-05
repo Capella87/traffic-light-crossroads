@@ -69,7 +69,7 @@ To troubleshoot, Make a shortcut including arguments regarding Java from OpenJDK
 </details>
 
 ---
-Last updated on Jun 4, 2021
+Last updated on Jun 5, 2021
 
 Copyright (c) 2021 Capella87
 
