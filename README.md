@@ -8,9 +8,8 @@ All routines are followed South Korean system. Each side has a traffic light for
 
 ## Traffic light
 
-<img src="./img/traffic-light.png" class="center">
-<br><br>
-<div class="center">
+<img src="./img/traffic-light.png">
+<br>
 
 |      State      |           Meaning           |
 |:---------------:|:---------------------------:|
@@ -19,7 +18,7 @@ All routines are followed South Korean system. Each side has a traffic light for
 | LEFT-TURN GREEN |          Left Turn          |
 |      GREEN      |         Go Straight         |
 
-</div><br>
+<br>
 
 ## Features
 **Note**: All left turns in this system is **protected left turn**.
@@ -72,13 +71,3 @@ To troubleshoot, Make a shortcut including arguments regarding Java from OpenJDK
 Last updated on Jun 5, 2021
 
 Copyright (c) 2021 Capella87
-
-<style>
-    .center
-    {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
-</style>
