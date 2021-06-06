@@ -80,7 +80,7 @@
       <a name="labelloc" val="east"/>
     </tool>
     <tool lib="1" name="NOT Gate">
-      <a name="facing" val="south"/>
+      <a name="facing" val="north"/>
       <a name="size" val="20"/>
     </tool>
     <tool lib="1" name="AND Gate">
@@ -601,7 +601,7 @@
       <a name="labelfont" val="Arial bold 12"/>
     </comp>
     <comp lib="6" loc="(219,698)" name="Text">
-      <a name="text" val="Released on Jun 5, 2021"/>
+      <a name="text" val="Released on Jun 6, 2021"/>
       <a name="font" val="Calibri plain 16"/>
     </comp>
     <comp lib="6" loc="(511,739)" name="Text">
@@ -809,13 +809,13 @@
       <a name="label" val="GL1"/>
       <a name="labelfont" val="Arial bold 12"/>
     </comp>
-    <comp lib="6" loc="(219,670)" name="Text">
-      <a name="text" val="System v2.1.1"/>
-      <a name="font" val="Arial Black plain 20"/>
-    </comp>
     <comp lib="0" loc="(200,340)" name="Tunnel">
       <a name="label" val="GL3"/>
       <a name="labelfont" val="Arial bold 12"/>
+    </comp>
+    <comp lib="6" loc="(219,670)" name="Text">
+      <a name="text" val="System v2.1.2"/>
+      <a name="font" val="Arial Black plain 20"/>
     </comp>
   </circuit>
   <circuit name="4-bit-counter">
@@ -3006,29 +3006,29 @@
     <wire from="(370,230)" to="(430,230)"/>
     <wire from="(470,210)" to="(470,280)"/>
     <wire from="(570,210)" to="(570,220)"/>
+    <wire from="(530,250)" to="(530,260)"/>
+    <wire from="(530,280)" to="(530,290)"/>
     <wire from="(430,230)" to="(430,240)"/>
     <wire from="(430,360)" to="(550,360)"/>
     <wire from="(530,230)" to="(530,250)"/>
     <wire from="(530,350)" to="(530,370)"/>
-    <wire from="(530,290)" to="(530,310)"/>
-    <wire from="(530,330)" to="(530,350)"/>
-    <wire from="(530,250)" to="(530,290)"/>
-    <wire from="(460,240)" to="(550,240)"/>
+    <wire from="(510,240)" to="(550,240)"/>
     <wire from="(530,230)" to="(550,230)"/>
     <wire from="(530,250)" to="(550,250)"/>
     <wire from="(430,240)" to="(460,240)"/>
     <wire from="(530,370)" to="(550,370)"/>
     <wire from="(530,350)" to="(550,350)"/>
+    <wire from="(460,240)" to="(490,240)"/>
     <wire from="(460,300)" to="(480,300)"/>
     <wire from="(570,340)" to="(660,340)"/>
     <wire from="(570,210)" to="(660,210)"/>
     <wire from="(470,280)" to="(480,280)"/>
     <wire from="(470,210)" to="(480,210)"/>
     <wire from="(340,240)" to="(350,240)"/>
-    <wire from="(430,240)" to="(430,290)"/>
-    <wire from="(430,310)" to="(430,360)"/>
+    <wire from="(530,290)" to="(530,350)"/>
     <wire from="(460,240)" to="(460,300)"/>
     <wire from="(520,290)" to="(530,290)"/>
+    <wire from="(430,240)" to="(430,360)"/>
     <comp lib="0" loc="(570,340)" name="Splitter">
       <a name="facing" val="west"/>
       <a name="fanout" val="3"/>
@@ -3052,6 +3052,13 @@
       <a name="width" val="3"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="1" loc="(530,260)" name="NOT Gate">
+      <a name="facing" val="north"/>
+      <a name="size" val="20"/>
+    </comp>
+    <comp lib="1" loc="(510,240)" name="NOT Gate">
+      <a name="size" val="20"/>
+    </comp>
     <comp lib="0" loc="(350,240)" name="Splitter">
       <a name="fanout" val="1"/>
       <a name="incoming" val="4"/>
@@ -3062,10 +3069,6 @@
     <comp lib="6" loc="(722,335)" name="Text">
       <a name="text" val="East"/>
       <a name="font" val="Arial bold 14"/>
-    </comp>
-    <comp lib="1" loc="(430,310)" name="NOT Gate">
-      <a name="facing" val="south"/>
-      <a name="size" val="20"/>
     </comp>
     <comp lib="6" loc="(724,226)" name="Text">
       <a name="text" val="North"/>
@@ -3078,10 +3081,6 @@
     <comp lib="1" loc="(520,290)" name="NAND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="1" loc="(530,330)" name="NOT Gate">
-      <a name="facing" val="south"/>
-      <a name="size" val="20"/>
     </comp>
     <comp lib="0" loc="(570,220)" name="Splitter">
       <a name="facing" val="west"/>
